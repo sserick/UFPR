@@ -1,0 +1,90 @@
+Trabalho 1 da disciplina de Inteligência Artificial - Flood-it 
+Paula Melo de Freitas - pmf19 - GRR20196287
+Erick da Silva Santos - ess18 - GRR20182554
+
+Este arquivo serve como breve apresentação deste trabalho. Seu objetivo é resolver uma instância do jogo flood-it.
+
+# Abordagem utilizada no trabalho 
+
+    Neste trabalho optamos por não usar uma heuristica explicitamente, utilizamos grafos para desenvolver e utilizamos a busca em largura que é o algoritmo utilizado para realizar uma busca ou travessia num grafo e estrutura de dados do tipo árvore.     
+
+# Detalhes da implementação 
+
+    ## Graphviz
+    
+    É uma biblioteca usada para demonstrar grafos em C.   
+
+    Para que possa rodar o programa precisa ser instalada a biblioteca Graphviz com o comando sudo apt install graphviz-dev, dentro do make já tem esse comando que instala a biblioteca e roda o comando.
+    
+    Agraph_t: um gráfico ou subgráfico;
+
+    Agnode_t: um nó de um gráfico ou subgráfico específico;
+
+    Agedge_t: uma aresta de um determinado gráfico ou subgrafo;
+
+    agedge(g,u,v,"nome",TRUE): Cria a aresta no grafo g entre o nó u e v; 
+
+    agdeledge(g, e) e agdelnode(g, v): exclui aresta e exclui nó;
+
+    agset(v, "cor", "1"): seta no atributo cor o numero 1 do nó v;
+
+    agattr(g, AGNODE, "cor", "0"): seta atributo cor para todos os nós que forem criados;
+
+    agget(v, "cor"): pega o atributo cor do nó v;
+
+    A vantagem da utilização dessa biblioteca é a economia de memória.    
+ 
+# Arquivos e funções
+
+    ## Makefile
+
+    A Makefile que acompanha este trabalho produz o executável `aquarela`
+sob o comando `make`. Este executável pode receber um ou nenhum parâmetro
+para sua execução.
+
+    Para que possa rodar o programa precisa ser instalada a biblioteca Graphviz com o comando sudo apt install graphviz-dev, dentro do make já tem esse comando que instala a biblioteca e roda o comando.
+
+    ## Grafo
+    
+    Este arquivo contém todas as funções que estão relacionadas com grafo. 
+
+    Criamos 3 estruturas para usar no trabalho:
+    1 - mapaStruct: estrututa para criar uma matriz que cada casa tem uma cor, se foi explorado e em qual lista está;
+
+    2 - jogoStruct: estrutura que tem tudo relacionado ao jogo (linha, coluna, cores e mapa);
+  
+    3 - coordenadas: estrutura de coordenadas do mapa.
+
+    As funções utilizadas nesse arquivo são:
+    
+    juntaNos: Cria um novo nó e apaga os antigos;
+
+    addAresta: Cria aresta entre dois nodos de cores diferentes; 
+
+    criaGrafo: inicia as lista de atributos de cada nodo e anda pelo mapa inteiro separando as cores (floodIt).
+
+    ## Jogo
+
+    Este arquivo contém todas as funções que estão relacionadas ao jogo.
+
+    leJogo: Lê o arquivo de entrada, aloca uma matriz com as dimensões da entrada e lê os valores da matriz do arquivo;
+
+    imprimeSolucao: Impreme a quantidade de movimentos e os movimentos feitos;
+ 
+    verficaCor: Pega a coordenada e verifica se a cor é igual (nas 4 direções) se for igual vai para a próxima coordenada se não cria nodos no grafos e liga eles com uma arestra;
+
+    floodIt: Começa no canto superior esquerdo e vai verificando cada coordenada e chamando a função verificaCor.
+
+    ## Resolve
+    
+    Este arquivo contém todas as funções que fazem a resolução do jogo.
+
+    buscaLargura: Faz uma busca em largura para achar o nodo mais distante para trazer ele mais perto da raiz;
+
+    resolveJogo: Anda por todos os nodos do grafo procurando a próxima cor.
+
+    ## Main
+    
+    Este arquivo contém a função main do programa.
+
+

@@ -1,0 +1,10 @@
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT(O_CUSTKEY)
+    FROM ORDERS
+    WHERE O_COMMENT LIKE '%special request%'
+    EXCEPT
+    SELECT DISTINCT(O_CUSTKEY)
+    FROM ORDERS
+    WHERE O_COMMENT LIKE '%unusual package%'
+);
