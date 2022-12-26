@@ -1,0 +1,213 @@
+01 proposições e conectivos
+https://www.youtube.com/watch?v=t4av7iSoGpM&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=1
+
+02 predicados e quantificadores
+https://www.youtube.com/watch?v=-UaSaBqNlHw&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=2
+
+03 conjuntos inteiros somatórios produtórios
+https://www.youtube.com/watch?v=RPSokydWtAw&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=3
+
+04 aproximação assintótica
+https://www.youtube.com/watch?v=hSWCROHwP0k&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=4
+
+05 piso e teto 1
+https://www.youtube.com/watch?v=rPIrbGeobfk&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=5
+
+06 piso e teto 2
+https://www.youtube.com/watch?v=GsXilggcAXk&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=6
+
+07 princípio indução finita
+https://www.youtube.com/watch?v=8NvUm1oNnRI&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=7
+
+08 demonstração por indução 1
+https://www.youtube.com/watch?v=uS0GicMKOFM&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=8
+
+09 demonstração por indução 2
+https://www.youtube.com/watch?v=2oGVL_AKge4&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=9
+
+10 indução exercícios 1
+https://www.youtube.com/watch?v=XU0PIXnSZWY&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=10
+
+11 indução exercícios 2
+https://www.youtube.com/watch?v=k-RiqWeY8XE&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=11
+
+11b indução exercícios 2b
+https://www.youtube.com/watch?v=GmSoFCohEOg&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=12
+
+12 indução exercícios 3
+https://www.youtube.com/watch?v=TuvSWipzQPI&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=13
+
+13 descrições recursivas 1
+https://www.youtube.com/watch?v=IjuKgMtMPjY&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=14
+
+14 descrições recursivas 2
+https://www.youtube.com/watch?v=eAQ_p6NMZZg&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=15
+
+15 descrições recursivas 3
+https://www.youtube.com/watch?v=kNJOpkjFR70&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=16
+
+18 recorrências 1
+https://www.youtube.com/watch?v=sSOMd_R6W-0&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=17
+
+19 recorrências 2
+https://www.youtube.com/watch?v=Hj20EwAeaow&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=18
+
+20 recorrências 3
+https://www.youtube.com/watch?v=Duoh8RoAEj0&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=19
+
+21 recorrências 4
+https://www.youtube.com/watch?v=7nLjr_Xkblw&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=20
+
+22 recorrências 5
+https://www.youtube.com/watch?v=iIDho4ioCzw&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=21
+
+24 recorrências 7
+https://www.youtube.com/watch?v=QWI2UxNX4EA&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=22
+
+25 recorrências 8
+https://www.youtube.com/watch?v=1XaTTDhS8IA&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=23
+
+26 recorrências 9
+https://www.youtube.com/watch?v=d4x_Ky85Aj4&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=24
+
+27 recorrências lineares homogẽneas 1
+https://www.youtube.com/watch?v=lswDMCRWoAo&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=25
+
+28 recorrências lineares homogẽneas 2
+https://www.youtube.com/watch?v=Thpnmto4eVg&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=26
+
+29 recorrências lineares homogẽneas 3
+https://www.youtube.com/watch?v=8So753rA8UQ&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=27
+
+30 recorrências lineares homogẽneas 4
+https://www.youtube.com/watch?v=KqtYJyCxNWM&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=28
+
+31 recorrências lineares homogẽneas 5
+https://www.youtube.com/watch?v=Kb5mnjqmdTE&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=29
+
+32 recorrências lineares não homogẽneas 1
+https://www.youtube.com/watch?v=rIzD6KO2GL8&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=30
+
+33 recorrências lineares não homogẽneas
+https://www.youtube.com/watch?v=jfzDrQCna9k&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=31
+
+34 recorrências lineares não homogẽneas
+https://www.youtube.com/watch?v=7tsa-_jUrYw&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=32
+
+35 recorrências lineares não homogẽneas
+https://www.youtube.com/watch?v=D6wiAhKH3xo&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=33
+
+36 recorrências lineares não homogẽneas
+https://www.youtube.com/watch?v=gN0HZ2CL8ZM&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=34
+
+37 somatórios 1
+https://www.youtube.com/watch?v=GpGIp8ibr4M&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=35
+
+38 somatórios 2
+https://www.youtube.com/watch?v=2rp2sUtImAo&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=36
+
+39 somatórios 3
+https://www.youtube.com/watch?v=niODLuVSPYI&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=37
+
+40 somatórios 4
+https://www.youtube.com/watch?v=b8M03dImcls&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=38
+
+41 somatórios 5
+https://www.youtube.com/watch?v=33md-AWI_LQ&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=39
+
+42 fundamentos de contagem 1
+https://www.youtube.com/watch?v=SqGECZg7yd0&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=40
+
+43 fundamentos de contagem 2
+https://www.youtube.com/watch?v=ZC5N39GOX6g&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=41
+
+44 fundamentos de contagem 3
+https://www.youtube.com/watch?v=jk98EBkmjjQ&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=42
+
+46 união
+https://www.youtube.com/watch?v=UCfRg9UxQRk&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=43
+
+45 fundamentos de contagem 4
+https://www.youtube.com/watch?v=xGLBb_mJBHM&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=44
+
+48 produto cartesiano 2
+https://www.youtube.com/watch?v=Z0YEmye95Zg&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=45
+
+49 produto cartesiano 3
+https://www.youtube.com/watch?v=vSyWCasT_EQ&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=46
+
+47 produto cartesiano 1
+https://www.youtube.com/watch?v=HXOt8jz9w9U&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=47
+
+50 sequências 1
+https://www.youtube.com/watch?v=3xNyJjQIMXk&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=48
+
+51 sequências 2
+https://www.youtube.com/watch?v=Y_gH3Pi4x6U&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=49
+
+52 sequências 3
+https://www.youtube.com/watch?v=fWqp1KlJh_E&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=50
+
+53 sequências 4
+https://www.youtube.com/watch?v=uusLgZ6bqQI&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=51
+
+54 funções
+https://www.youtube.com/watch?v=gBvz54aDeGQ&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=52
+
+55 ex circuitos
+https://www.youtube.com/watch?v=P-rNavaNEj4&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=53
+
+56 ex aniversários
+https://www.youtube.com/watch?v=So2YwRVgVcU&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=54
+
+57 bolas urnas
+https://www.youtube.com/watch?v=JeZzRP0ltYo&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=55
+
+58 subconjuntos
+https://www.youtube.com/watch?v=PyZ5TTpJ6yM&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=56
+
+59 ex otimização
+https://www.youtube.com/watch?v=_1ATAbYQNwI&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=57
+
+60 sequências sem repetição
+https://www.youtube.com/watch?v=Z3FF36j3s3Y&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=58
+
+61 problema dos aniversários
+https://www.youtube.com/watch?v=pB7amayp_9U&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=59
+
+62 permutações
+https://www.youtube.com/watch?v=UK7sm4OSDJE&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=60
+
+63 permutações ciurculares
+https://www.youtube.com/watch?v=pkdD2kqc32Q&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=61
+
+64 subconjuntos 1
+https://www.youtube.com/watch?v=p8n2chITavA&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=62
+
+65 subconjuntos 2
+https://www.youtube.com/watch?v=yp7iaWkCYTU&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=63
+
+66 subconjuntos 3
+https://www.youtube.com/watch?v=4BluhqDi1RI&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=64
+
+67 subconjuntos 4
+https://www.youtube.com/watch?v=eRewj8iOfrw&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=65
+
+68 permutações sem repetição
+https://www.youtube.com/watch?v=leHaopX4TLA&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=66
+
+69 compositores
+https://www.youtube.com/watch?v=uyfAXbO32PY&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=67
+
+70 composições fracas
+https://www.youtube.com/watch?v=eu0slszLlu8&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=68
+
+71 inclusão exclusão
+https://www.youtube.com/watch?v=TzncKCUmlOg&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=69
+
+72 pontos fixos permutações
+https://www.youtube.com/watch?v=neOZx38pQYs&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=70
+
+73 desarranjos
+https://www.youtube.com/watch?v=E0FzACtAxJk&list=PLYvGlXPqpR2-9smZIqc0Ozq9WvV-pLSvJ&index=71
+
