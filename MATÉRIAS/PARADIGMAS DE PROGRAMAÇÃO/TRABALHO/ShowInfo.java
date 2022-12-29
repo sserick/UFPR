@@ -1,26 +1,38 @@
 package TRABALHO;
 
+import java.util.Scanner;
+
 import TRABALHO.sectors.Sector;
+import TRABALHO.personages.Personage;
 
 public class ShowInfo {
 
-    public char showMenu (int cycles){
+    public String showMenu(int cycles, int player) {
 
-        if (cycles == 0){
+        Scanner input = new Scanner(System.in);
+        String option;
+
+        if (cycles == 0) {
+            System.out.printf("Para onde vai o Player %d (P%d)\n", player, player);
+            System.out.println("  U - Up");
+            System.out.println("  D - Down");
+            System.out.println("  L - Left");
+            System.out.println("  R - Right");
+
+            option = input.nextLine();
 
         } else {
-            
+            option = " ";
         }
 
-        return ' ';
+        return option;
     }
-    
-    
-    public void showSector(){
+
+    public void showSector() {
 
     }
-    
-    public void showBoard(Sector[][] board){
+
+    public void showBoard(Sector[][] board) {
 
         boolean actual, next, prev;
         int lin, col, cont;
@@ -35,36 +47,37 @@ public class ShowInfo {
         System.out.println("      1   2   3   4   5     ");
         System.out.println("    |---|---|---|---|---|   ");
 
-        while (lin < 5){
+        while (lin < 5) {
 
-            if (cont == 1){
+            if (cont == 1) {
                 System.out.printf("    ");
                 cont++;
             } else {
-                System.out.printf("%d   ", lin+1);
+                System.out.printf("%d   ", lin + 1);
                 cont++;
             }
 
-            for (col = 0; col < 5; col++){
+            for (col = 0; col < 5; col++) {
 
                 actual = board[lin][col].isShowSector();
                 sides = board[lin][col].getSides();
 
                 // Linhas das paredes verticais
-                if (cont == 1){
+                if (cont == 1) {
                     if (col == 4)
                         next = false;
                     else
-                        next = board[lin][col+1].isShowSector();
-                    
-                    // Se for pra mostrar o setor mostra as paredes com as portas se não mostra somente as paredes
-                    if (actual){
+                        next = board[lin][col + 1].isShowSector();
+
+                    // Se for pra mostrar o setor mostra as paredes com as portas se não mostra
+                    // somente as paredes
+                    if (actual) {
 
                         // Coloca a parede da esquerda
                         System.out.printf("%c", sides[0]);
-                        
+
                         // Coloca os Jogadores no Centro do setor se tiverem no setor
-                        if (board[lin][col].isHasSinglePlayer() && board[lin][col].isHasSupportPlayer()){
+                        if (board[lin][col].isHasSinglePlayer() && board[lin][col].isHasSupportPlayer()) {
                             System.out.printf("P12");
                         } else if (board[lin][col].isHasSinglePlayer()) {
                             System.out.printf("P1 ");
@@ -79,12 +92,12 @@ public class ShowInfo {
                         }
 
                         // Coloca a parede da Direita
-                        if (next == false){
+                        if (next == false) {
                             System.out.printf("%c", sides[3]);
                         }
                     } else {
                         if (col > 0)
-                            prev = board[lin][col-1].isShowSector();
+                            prev = board[lin][col - 1].isShowSector();
                         else
                             prev = false;
                         if (prev == false)
@@ -99,11 +112,11 @@ public class ShowInfo {
                     if (lin == 4)
                         next = false;
                     else
-                        next = board[lin+1][col].isShowSector();
+                        next = board[lin + 1][col].isShowSector();
 
-                    if (!actual){
-                        if (next){
-                            if (lin == 1 && col == 2){
+                    if (!actual) {
+                        if (next) {
+                            if (lin == 1 && col == 2) {
                                 System.out.printf("|-*-");
                             } else {
                                 System.out.printf("|-%c-", sides[2]);
@@ -116,13 +129,13 @@ public class ShowInfo {
                     }
                 }
 
-                if (col == 4){
+                if (col == 4) {
                     System.out.printf("|");
                 }
             }
 
             System.out.printf("\n");
-            if (cont == 2){
+            if (cont == 2) {
                 lin++;
                 cont = 0;
             }
@@ -130,8 +143,8 @@ public class ShowInfo {
         System.out.printf("\n");
     }
 
-    public void show(Sector[][] board){
+    public void show(Sector[][] board) {
         showBoard(board);
     }
-    
+
 }

@@ -1,14 +1,15 @@
 package TRABALHO.personages;
 
 import TRABALHO.Position;
+import TRABALHO.sectors.Sector;
 
-public abstract class Personage extends Position{
-    
+public abstract class Personage extends Position {
+
     // Atributos
     protected int attack;
     protected int defense;
     protected boolean isAlive;
-    
+
     // Construtor
     public Personage(int lin, int col, int attack, int defense, boolean isAlive) {
         super(lin, col);
@@ -43,7 +44,7 @@ public abstract class Personage extends Position{
     }
 
     // Métodos
-    public abstract void move();
+    public abstract void move(String choice, Personage player, Sector[][] board);
 
     public abstract void attack();
 
