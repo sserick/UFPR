@@ -1,5 +1,6 @@
 package TRABALHO.funções;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import TRABALHO.personagens.*;
@@ -14,13 +15,12 @@ public class Imprimir {
         char opção, ladosSetor[];
         boolean p1NoSetor;
         String setorPrivado;
-        Inimigo inimigos[];
+        ArrayList<Inimigo> inimigos;
         Scanner input = new Scanner(System.in);
 
         setorPrivado = tabuleiro[linha][coluna].getClass().getSimpleName();
         ladosSetor = tabuleiro[linha][coluna].getLadosSetor();
         qtdInimigos = tabuleiro[linha][coluna].getQuantidadeInimigos();
-        inimigos = new Inimigo[qtdInimigos];
         inimigos = tabuleiro[linha][coluna].getInimigos();
         p1NoSetor = (linha == jogador.getLinha() && coluna == jogador.getColuna()) ? true : false;
 
@@ -28,16 +28,16 @@ public class Imprimir {
             System.out.printf("Para onde vai o Player %d (P%d)\n", numeroJogador, numeroJogador);
             if (ladosSetor[0] != '-')
                 System.out.println("  U - Up");
-            if (ladosSetor[0] != '-')
+            if (ladosSetor[2] != '-')
                 System.out.println("  D - Down");
-            if (ladosSetor[0] != '|')
+            if (ladosSetor[1] != '|')
                 System.out.println("  L - Left");
-            if (ladosSetor[0] != '|')
+            if (ladosSetor[3] != '|')
                 System.out.println("  R - Right");
         } else if (tipoMenu == "Menu escolha inimigo") {
             System.out.printf("Escolha qual inimigo quer atacar (P%d):\n", numeroJogador);
             for (contador = 0; contador < qtdInimigos; contador++) {
-                if (inimigos[contador].isEstaVivo() == true)
+                if (inimigos.get(contador).isEstaVivo() == true)
                     if (contador == 0)
                         System.out.printf("  a - Inimigo\n");
                     else if (contador == 1)
@@ -64,20 +64,20 @@ public class Imprimir {
         return opção;
     }
 
-    private void mostrarInimigosSetor(int qtdInimigosSetor, Inimigo inimigosSetor[]) {
+    private void mostrarInimigosSetor(int qtdInimigosSetor, ArrayList<Inimigo> inimigosSetor) {
 
         if (qtdInimigosSetor == 1) {
-            System.out.printf("| %d/%d         |      ", inimigosSetor[0].getAtaque(),
-                    inimigosSetor[0].getDefesa());
+            System.out.printf("| %d/%d         |      ", inimigosSetor.get(0).getAtaque(),
+                    inimigosSetor.get(0).getDefesa());
         } else if (qtdInimigosSetor == 2) {
-            System.out.printf("| %d/%d %d/%d     |      ", inimigosSetor[0].getAtaque(),
-                    inimigosSetor[0].getDefesa(), inimigosSetor[1].getAtaque(),
-                    inimigosSetor[1].getDefesa());
+            System.out.printf("| %d/%d %d/%d     |      ", inimigosSetor.get(0).getAtaque(),
+                    inimigosSetor.get(0).getDefesa(), inimigosSetor.get(1).getAtaque(),
+                    inimigosSetor.get(1).getDefesa());
         } else if (qtdInimigosSetor == 3) {
-            System.out.printf("| %d/%d %d/%d %d/%d |      ", inimigosSetor[0].getAtaque(),
-                    inimigosSetor[0].getDefesa(), inimigosSetor[1].getAtaque(),
-                    inimigosSetor[1].getDefesa(), inimigosSetor[2].getAtaque(),
-                    inimigosSetor[2].getDefesa());
+            System.out.printf("| %d/%d %d/%d %d/%d |      ", inimigosSetor.get(0).getAtaque(),
+                    inimigosSetor.get(0).getDefesa(), inimigosSetor.get(1).getAtaque(),
+                    inimigosSetor.get(1).getDefesa(), inimigosSetor.get(2).getAtaque(),
+                    inimigosSetor.get(2).getDefesa());
         } else {
             System.out.printf("|             |      ");
         }
@@ -88,7 +88,7 @@ public class Imprimir {
         boolean jogadoresMesmoSetor;
         int linhaP1, linhaP2, colunaP1, colunaP2, qtdInimigosSetor1, qtdInimigosSetor2;
         char ladosSetor1[], ladosSetor2[];
-        Inimigo inimigosSetor1[], inimigosSetor2[];
+        ArrayList<Inimigo> inimigosSetor1, inimigosSetor2;
 
         linhaP1 = jogadores[0].getLinha();
         linhaP2 = jogadores[1].getLinha();
@@ -261,7 +261,13 @@ public class Imprimir {
                         System.out.printf("|-%c-", ladosSetor[2]);
                 }
                 if (coluna == 4) {
-                    System.out.printf("|      ");
+                    if (mostrarSetorAtual)
+                        if (linhaPorta == 2)
+                            System.out.printf("|      ");
+                        else
+                            System.out.printf("      ");
+                    else
+                        System.out.printf("|      ");
                     mostrarSetor(linha, linhaPorta, jogadores, tabuleiro);
                 }
             }

@@ -1,5 +1,6 @@
 package TRABALHO.funçõesGeração;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import TRABALHO.funções.Posição;
@@ -20,22 +21,24 @@ public class GerarPersonagens {
 
         int linha, coluna, virus, contador;
         Random random;
-        Inimigo inimigos[];
+        ArrayList<Inimigo> inimigos;
+        Inimigo inimigo;
 
         random = new Random();
 
         for (linha = 0; linha < 5; linha++) {
             for (coluna = 0; coluna < 5; coluna++) {
 
+                inimigos = new ArrayList<Inimigo>();
                 // Não coloca inimigos na saída e no centro
                 if ((posiçãoX.getLinha() != linha || posiçãoX.getColuna() != coluna) && (linha != 2 || coluna != 2)) {
 
                     tabuleiro[linha][coluna].setQuantidadeInimigos(random.nextInt(3) + 1);
-                    inimigos = new Inimigo[tabuleiro[linha][coluna].getQuantidadeInimigos()];
 
                     for (contador = 0; contador < tabuleiro[linha][coluna].getQuantidadeInimigos(); contador++) {
                         virus = random.nextInt(3) + 1;
-                        inimigos[contador] = new Inimigo(linha, coluna, true, virus, virus);
+                        inimigo = new Inimigo(linha, coluna, true, virus, virus);
+                        inimigos.add(inimigo);
                     }
                     tabuleiro[linha][coluna].setInimigos(inimigos);
                 }

@@ -32,15 +32,16 @@ public class JogadorSuporte extends Jogador {
             this.defesa = defesa;
     }
 
-    public void recuperar(char jogada, Personagem jogador) {
+    public void recuperar(char jogada, Jogador jogador) {
 
         int defesaJogador;
 
-        if (jogador.getClass().getSimpleName() == "JogadorSimples")
+        if (jogador.getClass().getSimpleName().intern() == "JogadorSimples")
             defesaJogador = ((JogadorSimples) jogador).getDefesa();
         else
-            defesaJogador = ((JogadorSuporte) jogador).getDefesa();
-        defesaJogador = +2;
+            defesaJogador = this.getDefesa();
+
+        defesaJogador = defesaJogador + 2;
 
         if (jogada == 'R' || jogada == 'r') {
             if (defesaJogador > 6)
@@ -50,10 +51,9 @@ public class JogadorSuporte extends Jogador {
                 defesaJogador = 7;
         }
 
-        if (jogador.getClass().getSimpleName() == "JogadorSimples")
+        if (jogador.getClass().getSimpleName().intern() == "JogadorSimples")
             ((JogadorSimples) jogador).setDefesa(defesaJogador);
         else
-            ((JogadorSuporte) jogador).setDefesa(defesaJogador);
-        ;
+            this.setDefesa(defesaJogador);
     }
 }

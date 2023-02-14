@@ -15,7 +15,7 @@ public class VerificarRegras {
         // Verifica se o ciclo é >= 25 e se ninguém ganhou
         continuarJogo = (ciclos < 25 && (!ganhou[0] && !ganhou[1]) && defesaP1 != 0) ? true : false;
         // Verifica se as defesas são iguais a zero: os dois perdem
-        jogadoresPerderam = (defesaP1 == 0 && defesaP2 != 0) ? true : false;
+        jogadoresPerderam = (defesaP1 == 0 && defesaP2 == 0) ? true : false;
         // Verifica se a defesa de P1 é igual a zero
         p1Morreu = (defesaP1 == 0 && defesaP2 != 0) ? true : false;
         // Verifica se P1 chegou a X

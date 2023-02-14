@@ -1,5 +1,6 @@
 package TRABALHO.setores;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import TRABALHO.funções.Posição;
@@ -10,11 +11,11 @@ public class Setor extends Posição {
     // Atributos
     protected char[] ladosSetor;
     protected int quantidadeInimigos;
-    protected Inimigo[] inimigos;
+    protected ArrayList<Inimigo> inimigos;
     protected boolean mostrarSetor;
 
     // Construtor
-    public Setor(int linha, int coluna, char[] ladosSetor, int quantidadeInimigos, Inimigo[] inimigos,
+    public Setor(int linha, int coluna, char[] ladosSetor, int quantidadeInimigos, ArrayList<Inimigo> inimigos,
             boolean mostrarSetor) {
         super(linha, coluna);
         this.ladosSetor = ladosSetor;
@@ -41,11 +42,11 @@ public class Setor extends Posição {
             this.quantidadeInimigos = quantidadeInimigos;
     }
 
-    public Inimigo[] getInimigos() {
+    public ArrayList<Inimigo> getInimigos() {
         return inimigos;
     }
 
-    public void setInimigos(Inimigo[] inimigos) {
+    public void setInimigos(ArrayList<Inimigo> inimigos) {
         this.inimigos = inimigos;
     }
 
@@ -62,15 +63,14 @@ public class Setor extends Posição {
 
         int defesaInimigo;
 
-        defesaInimigo = this.inimigos[inimigo].getDefesa();
+        defesaInimigo = this.inimigos.get(inimigo).getDefesa();
         defesaInimigo = defesaInimigo - ataqueJogador;
 
         if (defesaInimigo <= 0) {
-            defesaInimigo = 0;
-            this.inimigos[inimigo].setEstaVivo(false);
+            this.inimigos.remove(inimigo);
+        } else {
+            this.inimigos.get(inimigo).setDefesa(defesaInimigo);
         }
-
-        this.inimigos[inimigo].setDefesa(defesaInimigo);
     }
 
     // Procurar no setor
@@ -78,16 +78,15 @@ public class Setor extends Posição {
         Random random;
         random = new Random();
         int gerarNumero, ganharDefesa, perderDefesa, linha, coluna, QuantidadeInimigos, contador;
-        Inimigo[] inimigos;
+        ArrayList<Inimigo> inimigos;
 
         gerarNumero = random.nextInt(6) + 1;
         linha = jogador.getLinha();
         coluna = jogador.getColuna();
         QuantidadeInimigos = tabuleiro[linha][coluna].getQuantidadeInimigos();
-        inimigos = new Inimigo[QuantidadeInimigos];
         inimigos = tabuleiro[linha][coluna].getInimigos();
 
-        if (jogador.getClass().getSimpleName() == "JogadorSimples")
+        if (jogador.getClass().getSimpleName().intern() == "JogadorSimples")
             ganharDefesa = ((JogadorSimples) jogador).getDefesa();
         else
             ganharDefesa = ((JogadorSuporte) jogador).getDefesa();
@@ -102,18 +101,18 @@ public class Setor extends Posição {
             ganharDefesa = +2;
         } else {
             for (contador = 0; contador < QuantidadeInimigos; contador++) {
-                perderDefesa = inimigos[contador].getDefesa();
+                perderDefesa = inimigos.get(contador).getDefesa();
                 perderDefesa = -1;
                 if (perderDefesa < 0)
                     perderDefesa = 0;
-                inimigos[contador].setDefesa(perderDefesa);
-                if (inimigos[contador].getDefesa() == 0)
-                    inimigos[contador].setEstaVivo(false);
+                inimigos.get(contador).setDefesa(perderDefesa);
+                if (inimigos.get(contador).getDefesa() == 0)
+                    inimigos.remove(contador);
             }
         }
 
         if (gerarNumero == 4 || gerarNumero == 5) {
-            if (jogador.getClass().getSimpleName() == "JogadorSimples")
+            if (jogador.getClass().getSimpleName().intern() == "JogadorSimples")
                 ((JogadorSimples) jogador).setDefesa(ganharDefesa);
             else
                 ((JogadorSuporte) jogador).setDefesa(ganharDefesa);
