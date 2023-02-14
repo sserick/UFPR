@@ -7,6 +7,11 @@ import TRABALHO.funçõesGeração.*;
 import TRABALHO.personagens.*;
 import TRABALHO.setores.Setor;
 
+/*
+    Nome: Erick da Silva Santos
+    GRR: GRR20182554
+*/
+
 public class Main {
 
     public static void main(String[] args) {
