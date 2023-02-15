@@ -2,7 +2,7 @@ package TRABALHO.personagens;
 
 import TRABALHO.setores.Setor;
 
-public abstract class Jogador extends Personagem {
+public class Jogador extends Personagem {
 
     public Jogador(int linha, int coluna, boolean estaVivo) {
         super(linha, coluna, estaVivo);

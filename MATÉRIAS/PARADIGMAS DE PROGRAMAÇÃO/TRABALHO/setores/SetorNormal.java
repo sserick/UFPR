@@ -11,4 +11,8 @@ public class SetorNormal extends Setor {
         super(linha, coluna, ladosSetor, quantidadeInimigos, inimigos, mostrarSetor);
     }
 
+    public SetorNormal(int linha, int coluna, char[] ladosSetor, boolean mostrarSetor) {
+        super(linha, coluna, ladosSetor, mostrarSetor);
+    }
+
 }

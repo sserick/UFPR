@@ -3,10 +3,10 @@ package TRABALHO.setores;
 import java.util.ArrayList;
 import java.util.Random;
 
-import TRABALHO.funções.Posição;
+import TRABALHO.funcoes.Posicao;
 import TRABALHO.personagens.*;
 
-public class Setor extends Posição {
+public class Setor extends Posicao {
 
     // Atributos
     protected char[] ladosSetor;
@@ -21,6 +21,12 @@ public class Setor extends Posição {
         this.ladosSetor = ladosSetor;
         this.quantidadeInimigos = quantidadeInimigos;
         this.inimigos = inimigos;
+        this.mostrarSetor = mostrarSetor;
+    }
+
+    public Setor(int linha, int coluna, char[] ladosSetor, boolean mostrarSetor) {
+        super(linha, coluna);
+        this.ladosSetor = ladosSetor;
         this.mostrarSetor = mostrarSetor;
     }
 

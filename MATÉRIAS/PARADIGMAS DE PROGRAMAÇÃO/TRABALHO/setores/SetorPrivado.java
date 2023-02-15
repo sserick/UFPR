@@ -10,4 +10,8 @@ public class SetorPrivado extends Setor {
             boolean mostrarSetor) {
         super(linha, coluna, ladosSetor, quantidadeInimigos, inimigos, mostrarSetor);
     }
+
+    public SetorPrivado(int linha, int coluna, char[] ladosSetor, boolean mostrarSetor) {
+        super(linha, coluna, ladosSetor, mostrarSetor);
+    }
 }

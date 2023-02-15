@@ -1,8 +1,8 @@
 package TRABALHO.personagens;
 
-import TRABALHO.funções.Posição;
+import TRABALHO.funcoes.Posicao;
 
-public abstract class Personagem extends Posição {
+public abstract class Personagem extends Posicao {
 
     protected boolean estaVivo;
 

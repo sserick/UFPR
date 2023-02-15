@@ -12,6 +12,10 @@ public class SetorOculto extends Setor {
         super(linha, coluna, ladosSetor, quantidadeInimigos, inimigos, mostrarSetor);
     }
 
+    public SetorOculto(int linha, int coluna, char[] ladosSetor, boolean mostrarSetor) {
+        super(linha, coluna, ladosSetor, mostrarSetor);
+    }
+
     @Override
     public void atacar(int inimigo, int ataqueJogador) {
 

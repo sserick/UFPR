@@ -1,12 +1,12 @@
-package TRABALHO.funções;
+package TRABALHO.funcoes;
 
-public class Posição {
+public class Posicao {
     // Atributos
-    int linha;
-    int coluna;
+    protected int linha;
+    protected int coluna;
 
     // Construtor
-    public Posição(int linha, int coluna) {
+    public Posicao(int linha, int coluna) {
         this.linha = linha;
         this.coluna = coluna;
     }

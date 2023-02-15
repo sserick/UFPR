@@ -1,4 +1,4 @@
-package TRABALHO.funçõesGeração;
+package TRABALHO.funcaoGeracao;
 
 import java.util.Random;
 
@@ -41,11 +41,11 @@ public class GerarLadosSetor {
         // Se 0 - setor normal, se 1 - setor oculto, se 2 - setor privado
         // Seta com os lados do setor
         if (tipoSetor == 0)
-            setorTemporario = new SetorNormal(linha, coluna, ladosSetor, 0, null, mostrarSetor);
+            setorTemporario = new SetorNormal(linha, coluna, ladosSetor, mostrarSetor);
         else if (tipoSetor == 1)
-            setorTemporario = new SetorOculto(linha, coluna, ladosSetor, 0, null, mostrarSetor);
+            setorTemporario = new SetorOculto(linha, coluna, ladosSetor, mostrarSetor);
         else
-            setorTemporario = new SetorPrivado(linha, coluna, ladosSetor, 0, null, mostrarSetor);
+            setorTemporario = new SetorPrivado(linha, coluna, ladosSetor, mostrarSetor);
 
         return setorTemporario;
     }

@@ -1,4 +1,4 @@
-package TRABALHO.funções;
+package TRABALHO.funcoes;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -159,7 +159,7 @@ public class Imprimir {
         }
     }
 
-    private void mostrarTabuleiro(Setor[][] tabuleiro, Personagem jogadores[], Posição posX) {
+    private void mostrarTabuleiro(Setor[][] tabuleiro, Personagem jogadores[], Posicao posX) {
 
         boolean mostrarSetorAtual, mostrarProxSetor, mostrarSetorAnterior, jogadorSuporte, jogadorSimples, posiçãoX;
         int linha, coluna, linhaPorta;
@@ -281,7 +281,7 @@ public class Imprimir {
         System.out.printf("\n");
     }
 
-    public void mostrar(Setor[][] tabuleiro, Personagem jogadores[], Posição posX) {
+    public void mostrar(Setor[][] tabuleiro, Personagem jogadores[], Posicao posX) {
 
         System.out.print("\033[H\033[2J");
         System.out.flush();

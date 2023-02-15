@@ -1,9 +1,9 @@
-package TRABALHO.funçõesGeração;
+package TRABALHO.funcaoGeracao;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import TRABALHO.funções.Posição;
+import TRABALHO.funcoes.Posicao;
 import TRABALHO.personagens.*;
 import TRABALHO.setores.Setor;
 
@@ -17,7 +17,7 @@ public class GerarPersonagens {
     }
 
     // Gera os inimigos no tabuleiro
-    public void gerarInimigos(Setor[][] tabuleiro, Posição posiçãoX) {
+    public void gerarInimigos(Setor[][] tabuleiro, Posicao posiçãoX) {
 
         int linha, coluna, virus, contador;
         Random random;

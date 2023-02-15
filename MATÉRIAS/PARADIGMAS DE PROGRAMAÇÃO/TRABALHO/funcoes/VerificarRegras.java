@@ -1,4 +1,4 @@
-package TRABALHO.funções;
+package TRABALHO.funcoes;
 
 import TRABALHO.personagens.*;
 

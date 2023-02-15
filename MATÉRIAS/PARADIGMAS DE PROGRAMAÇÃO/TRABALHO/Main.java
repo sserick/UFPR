@@ -2,8 +2,8 @@ package TRABALHO;
 
 import java.util.ArrayList;
 
-import TRABALHO.funções.*;
-import TRABALHO.funçõesGeração.*;
+import TRABALHO.funcaoGeracao.GerarTabuleiro;
+import TRABALHO.funcoes.*;
 import TRABALHO.personagens.*;
 import TRABALHO.setores.Setor;
 
@@ -28,7 +28,7 @@ public class Main {
         Setor tabuleiro[][] = new Setor[5][5];
         Jogador jogadores[] = new Jogador[2];
         ArrayList<Inimigo> inimigos;
-        Posição posX;
+        Posicao posX;
 
         // Inicializando atributos
         finalizado = true;

@@ -1,24 +1,24 @@
-package TRABALHO.funçõesGeração;
+package TRABALHO.funcaoGeracao;
 
-import TRABALHO.funções.Posição;
+import TRABALHO.funcoes.Posicao;
 import TRABALHO.personagens.*;
 import TRABALHO.setores.*;
 
 public class GerarTabuleiro {
 
-    protected Posição posiçãoX;
+    protected Posicao posiçãoX;
 
     // Construtor
-    public GerarTabuleiro(Posição posiçãoX) {
+    public GerarTabuleiro(Posicao posiçãoX) {
         this.posiçãoX = posiçãoX;
     }
 
     // Getters e Setters
-    public Posição getPosiçãoX() {
+    public Posicao getPosiçãoX() {
         return posiçãoX;
     }
 
-    public void setPosiçãoX(Posição posiçãoX) {
+    public void setPosiçãoX(Posicao posiçãoX) {
         this.posiçãoX = posiçãoX;
     }
 

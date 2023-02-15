@@ -1,18 +1,18 @@
-package TRABALHO.funçõesGeração;
+package TRABALHO.funcaoGeracao;
 
 import java.util.Random;
 
-import TRABALHO.funções.Posição;
+import TRABALHO.funcoes.Posicao;
 import TRABALHO.setores.Setor;
 
 public class GerarPontoChegada {
 
     // Gera um random para a posição do X
-    public Posição gerarPosiçãoX(Setor[][] tabuleiro) {
+    public Posicao gerarPosiçãoX(Setor[][] tabuleiro) {
         Random random;
         int posLinha, posColuna;
         random = new Random();
-        Posição posTemp = new Posição(0, 0);
+        Posicao posTemp = new Posicao(0, 0);
 
         posLinha = random.nextInt(5);
         posColuna = random.nextInt(5);
